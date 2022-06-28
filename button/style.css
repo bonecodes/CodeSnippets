@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #FDC600;
+}
+
+#wrapper {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.fa, .fa-solid{
+    font-size: 19px;
+    width: 20px;
+    padding: 0px 0px;
+    background-color: transparent !important;background-color: transparent !important;
+}
+
+section {
+    margin-top: 400px;
+}
+
+.btn-slider {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 240px;
+    line-height: 50px;
+    margin: 25px 0;
+    padding: 0px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, #e570e7 0%, #79f1fc 100%);
+}
+
+.btn-slider:active {
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.96);
+}
+
+.btn-slider:hover {
+    background: linear-gradient(-135deg, #e570e7 0%, #79f1fc 100%);
+}
+
+.btn-slider span.circle {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: #e570e7;
+    position: absolute;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transition: all 1.5s ease;
+}
+
+.btn-slider:hover span.circle {
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fff;
+    color: #79f1fc;
+}
+
+.btn-slider span.title {
+    position: absolute;
+    left: 85px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #fff;
+    transition: all 1.5s linear;
+    background-color: transparent !important;
+}
+
+.btn-slider span.title-hover {
+    opacity: 0;
+}
+
+.btn-slider:hover span.title {
+    opacity: 0;
+}
+
+.btn-slider:hover span.title-hover {
+    opacity: 1;
+    left: 60px;
+}
